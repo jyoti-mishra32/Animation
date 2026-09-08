@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+}
+.card {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background: #1e1e1e;
+    border: 2px solid cyan;
+    border-radius: 20px;
+    animation: glow 2s linear infinite;
+}
+.card h2 {
+    color: cyan;
+}
+.card p {
+    color: white;
+}
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px cyan;
+    }
+
+    50% {
+        box-shadow: 0 0 25px cyan;
+    }
+
+    100% {
+        box-shadow: 0 0 5px cyan;
+    }
+}
