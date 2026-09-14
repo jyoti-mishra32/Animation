@@ -1,0 +1,59 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #111;
+}
+.player {
+  width: 280px;
+  padding: 30px;
+  text-align: center;
+  background: #1e1e1e;
+  border-radius: 20px;
+  color: white;
+}
+.cover {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  background: #333;
+  border-radius: 15px;
+  font-size: 50px;
+}
+button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: cyan;
+}
+.equalizer {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+.equalizer span {
+    width: 6px;
+    height: 25px;
+    background: cyan;
+    animation: beat 0.6s infinite alternate;
+}
+.equalizer span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.equalizer span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.equalizer span:nth-child(4) {
+    animation-delay: 0.1s;
+}
+@keyframes beat {
+    to {
+        height: 45px;
+    }
+}
+
+
