@@ -1,0 +1,33 @@
+body {
+    background: #080014;
+    color: white;
+    font-family: Arial;
+}
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.content {
+    position: relative;
+    z-index: 2;
+}
+h1 {
+    font-size: 60px;
+}
+h1 span {
+    color: cyan;
+}
+.circle {
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: cyan;
+    filter: blur(120px);
+    opacity: 0.25;
+}
