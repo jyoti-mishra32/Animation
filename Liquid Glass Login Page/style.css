@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Glass Card */
+
+.login-card {
+    width: 350px;
+    padding: 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Heading */
+
+.login-card h1 {
+    margin-bottom: 10px;
+}
+
+.login-card > p {
+    color: #ddd;
+}
+
+/* Input */
+
+input {
+    width: 100%;
+    padding: 13px;
+
+    margin: 8px 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.15);
+
+    color: white;
+
+    outline: none;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus {
+    border-color: white;
+}
+
+/* Button */
+
+button {
+    width: 100%;
+    padding: 13px;
+
+    margin-top: 15px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: white;
+    color: #764ba2;
+
+    font-size: 16px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #eee;
+    transform: scale(1.05);
+}
+
+/* Sign Up */
+
+.signup {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-card {
+    animation: slideUp 0.8s ease;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
