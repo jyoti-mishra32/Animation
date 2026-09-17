@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>For My Jaan ❤️</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+<body>
+
+
+    <!-- =========================================
+         LOADING SCREEN
+    ========================================== -->
+
+    <main id="loadingScreen">
+
+        <div class="stars"></div>
+
+        <div class="glow"></div>
+
+        <div class="loading-content">
+
+            <p class="loading-text">
+                Initializing something special...
+            </p>
+
+            <div class="progress-wrapper">
+
+                <div class="progress-bar">
+                    <div id="progress"></div>
+                </div>
+
+                <span id="percentage">
+                    0%
+                </span>
+
+            </div>
+
+            <p class="special-text">
+                For one very special person...
+            </p>
+
+            <div class="tiny-heart">
+                ♡
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         NAME REVEAL
+    ========================================== -->
+
+    <section id="nameScreen">
+
+        <div class="name-orbit"></div>
+
+        <div class="name-content">
+
+            <p class="name-small">
+                FOR ONE VERY SPECIAL PERSON
+            </p>
+
+            <h1>
+                My Life
+            </h1>
+
+            <div class="jaan-text">
+                my Jaan
+                <span>♡</span>
+            </div>
+
+            <div class="continue-line">
+                Click anywhere to continue
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         BIRTHDAY SCREEN
+    ========================================== -->
+
+    <section id="birthdayScreen">
+
+        <div id="burst"></div>
+
+        <div class="birthday-content">
+
+            <p class="birthday-small">
+                TODAY IS YOUR DAY
+            </p>
+
+            <div class="birthday-cake">
+                🎂
+            </div>
+
+            <h1>
+                HAPPY
+            </h1>
+
+            <h1 class="birthday-word">
+                BIRTHDAY
+            </h1>
+
+            <div class="birthday-name">
+                Brother ❤️
+            </div>
+
+            <p class="birthday-sub">
+                My Hero
+            </p>
+
+            <button id="birthdayNext">
+
+                There's something more...
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         MEMORY UNIVERSE
+    ========================================== -->
+
+    <section id="memoryScreen">
+
+        <div class="memory-stars"></div>
+
+        <div class="memory-glow"></div>
+
+        <div class="memory-orbit orbit-one"></div>
+
+        <div class="memory-orbit orbit-two"></div>
+
+        <div class="memory-orbit orbit-three"></div>
+
+        <div id="memoryParticles"></div>
+
+
+        <!-- Heading -->
+
+        <div class="memory-heading">
+
+            <span>
+                A LITTLE JOURNEY
+            </span>
+
+            <h2>
+                OUR MEMORIES
+            </h2>
+
+            <p>
+                Some moments deserve to stay forever.
+            </p>
+
+        </div>
+
+
+
+        <!-- Photo -->
+
+        <div class="memory-stage">
+
+            <button
+                class="memory-arrow left"
+                id="prevPhoto"
+            >
+                ‹
+            </button>
+
+
+            <div
+                class="photo-wrapper"
+                id="photoWrapper"
+            >
+
+                <div class="photo-glow"></div>
+
+                <div class="photo-card">
+
+                    <div class="photo-shine"></div>
+
+                    <img
+                        id="memoryPhoto"
+                        src="images/1.jpeg"
+                        alt="Memory"
+                    >
+
+                    <div
+                        class="photo-number"
+                        id="photoNumber"
+                    >
+                        01 / 08
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="memory-arrow right"
+                id="nextPhoto"
+            >
+                ›
+            </button>
+
+        </div>
+
+
+
+        <!-- Memory information -->
+
+        <div class="memory-info">
+
+            <div
+                class="memory-counter"
+                id="memoryCounter"
+            >
+                MEMORY 01
+            </div>
+
+            <h3 id="memoryTitle">
+                A moment worth remembering.
+            </h3>
+
+            <p id="memoryMessage">
+                Some pictures are more than pictures.
+                They carry a little piece of our story.
+            </p>
+
+            <div
+                class="memory-dots"
+                id="memoryDots"
+            ></div>
+
+        </div>
+
+
+        <button
+            id="memoryNext"
+            class="memory-next"
+        >
+
+            Keep this memory ❤️
+
+            <span>→</span>
+
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================================
+         LETTER SCREEN
+    ========================================== -->
+
+    <section id="letterScreen">
+
+        <div class="letter-stars"></div>
+
+        <div class="letter-glow"></div>
+
+
+        <div class="letter-intro">
+
+            <span>
+                BEFORE YOU GO...
+            </span>
+
+            <h2>
+                ONE LAST THING
+            </h2>
+
+            <p>
+                This one is from the heart.
+            </p>
+
+            <button id="openLetter">
+
+                Open this letter
+
+                <span>♡</span>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- Letter -->
+
+        <div
+            class="letter-paper"
+            id="letterPaper"
+        >
+
+            <div class="letter-top">
+
+                <span>
+                    FOR MY Hero
+                </span>
+
+                <div>
+                    ♡
+                </div>
+
+            </div>
+
+
+            <h3>
+                Dear Brother,
+            </h3>
+
+
+            <div
+                class="typed-letter"
+                id="typedLetter"
+            ></div>
+
+
+            <div
+                class="letter-sign"
+                id="letterSign"
+            >
+                Always your sister ❤️
+            </div>
+
+
+            <button
+                id="letterNext"
+            >
+
+                There's one last surprise
+
+                <span>→</span>
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         FINAL SCREEN
+    ========================================== -->
+
+    <section id="finalScreen">
+
+        <div class="final-stars"></div>
+
+        <div class="final-glow"></div>
+
+        <div
+            id="heartParticles"
+            class="heart-particles"
+        ></div>
+
+
+        <div class="final-content">
+
+            <p class="final-small">
+                AND IF YOU EVER FORGET...
+            </p>
+
+            <h1 class="final-name">
+                Brother
+            </h1>
+
+            <div class="final-heart">
+                ♥
+            </div>
+
+            <h2>
+                You'll always be<br>
+                <span>my Happiness.</span>
+            </h2>
+
+            <p class="final-message">
+
+                No matter where life takes us,<br>
+                some bonds never change.
+
+            </p>
+
+            <div class="final-line"></div>
+
+            <p class="final-birthday">
+                HAPPY BIRTHDAY, JAAN ❤️
+            </p>
+
+        </div>
+
+
+        <div class="final-footer">
+            Made with love, just for you.
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================================
+         SCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
